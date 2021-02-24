@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS_1.css">
+    <script src="JA_1.js"></script>
+
+    <title>로그인 화면</title>
+  </head>
+  <body>
+
+    <div class="logo">
+      <img src="image/cooling.jpg" id="logo_img">
+      <p>---로고---</p>
+    </div>
+
+    <form id="input_list">
+        <input type="text" name="ID" placeholder="아이디" class="id_pw_box"><br>
+        <input type="password" name="PW" placeholder="비밀번호" class="id_pw_box">
+      <div class="iogin">
+        <input type="button" value="로그인" class="iogin_box" 
+        onClick="location.href='Next_Page.html'">
+      </div>
+      <div id="ul_box">
+      <ul id="list_box">
+        <li class="li_1"><a href="#" 
+          onclick="window.open('find_ID.html','PopupWin', 'width=500,height=600')">아이디</a></li>
+        <li class="li_2"><a href="#" 
+          onclick="window.open('find_PW.html','PopupWin', 'width=500,height=600')">비밀번호 찾기</a></li>
+        <li class="li_3"><a href="#" 
+          onclick="window.open('new_login.html')">회원가입</a></li>
+      </div>
+      </ul>
+    </form>
+  </body>
+</html>

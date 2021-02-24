@@ -122,22 +122,10 @@ header {
     height: 80px;
     font-size: 22px;
 }
-#month {
-
-}
-#date {
-
-}
-#year {
-
-}
 #day {
     display: block;
     margin-top: 3px;
     font-weight: bold;
-}
-.point {
-
 }
 #middle_box {
     width: 100%;

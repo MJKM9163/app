@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="CSS_Next_Page.css">
+        <script src="JA_Next_Page.js"></script>
+        <title>다음</title>
+    </head>
+    <body>
+        <header>
+            <ul>
+                <li id="header_li_1" class="header_li">
+                    유용한 사이트 모음
+                </li>
+                <li id="header_li_2" class="header_li">
+                    현재 날씨
+                </li>
+                <li id="header_li_3" class="header_li">
+                    설정
+                </li>
+                
+            </ul>
+        </header>
+        <div id="middle_box">
+            <div id="result">
+            </div>
+            <ul id="middle_ul">
+
+                <li id="news_li" class="middle_li">
+                    <a href="https://theuselessweb.com" target="_blank">
+                        <img src=icon/question2.png id="news_img_1" class="All_img" 
+                            onmouseover="img_hover_1()" onmouseout="img_un_hover_1()">
+                            <div class="news_div_1">랜덤으로 꾸며진 사이트가 나온다!<br>
+                            (재밌는 아이디어가 많음)</div></a><br>
+                    <a href="https://www.flaticon.com" target="_blank">
+                            <img src=icon/monitoring2.png id="news_img_2" class="All_img"
+                            onmouseover="img_hover_2()" onmouseout="img_un_hover_2()">
+                            <div class="news_div_2">무료 아이콘 사이트!</div></a>
+                </li>
+
+                <li id="weather_li" class="middle_li">
+                            <div id="weather_clock">
+                                <div class="time_box">
+                                    <span class="H_M" id="hours">00</span>
+                                    <span class="mark">:</span>
+                                    <span class="H_M" id="min">00</span>
+                                    <span class="mark_2">.</span>
+                                    <span class="txt_sm" id="sec">00</span>
+                                </div>
+                                <div class="date_box">
+                                    <span id="month">00</span>
+                                    <span class="point">.</span>
+                                    <span id="date">00</span>
+                                    <span class="point">.</span>
+                                    <span id="year">00</span>
+                                    <span id="day">00</span>
+                                </div>
+                                    
+                                    
+                            </div>
+                </li>
+
+                <li id="setting_li" class="middle_li">
+                            <div id="setting_box">
+                                <ul id="setting_box_ul_1" class="setting_box_All_ul">
+                                    <li id="setting_li_night" class="setting_box_All_li" value="day" onclick="">야간 모드</li>
+                                    <li id="setting_box_li_2" class="setting_box_All_li"></li>
+                                    <li id="setting_box_li_3" class="setting_box_All_li"></li>
+                                </ul>
+                                <ul id="setting_box_ul_2" class="setting_box_All_ul">
+                                    <li id="setting_box_li_4" class="setting_box_All_li"></li>
+                                    <li id="setting_box_li_5" class="setting_box_All_li"></li>
+                                    <li id="setting_box_li_6" class="setting_box_All_li"></li>
+                                </ul>
+                                <ul id="setting_box_ul_3" class="setting_box_All_ul">
+                                    <li id="setting_box_li_7" class="setting_box_All_li"></li>
+                                    <li id="setting_box_li_8" class="setting_box_All_li"></li>
+                                    <a href="">
+                                    <li id="setting_li_congratulation" class="setting_box_All_li">만든 사람에게 응원 댓글 남기러 가기</li>
+                                    </a>
+                                </ul>
+                            </div>
+                </li>
+
+            </ul>
+        </div>
+
+        <div id="bottom_box">
+        <section>
+            <ul id="bottom_ul">
+                <li class="bottom_li" id="li_1"><button class="All_button_1" id="All_button" onclick="move1()"></button></li>
+                <li class="bottom_li" id="li_2"><button class="All_button_2" id="All_button" onclick="move2()"></button></li>
+                <li class="bottom_li" id="li_3"><button class="All_button_3" id="All_button" onclick="move3()"></button></li>
+            </ul>
+            <div id="move_bar">
+            </div>
+        </section>
+        </div>
+    </body>
+</html>
